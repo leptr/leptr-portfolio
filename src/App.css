@@ -293,9 +293,9 @@ html {
 
 .skills-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
   padding: 50px 0;
 }
 
@@ -368,6 +368,18 @@ html {
   cursor: pointer;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 1100px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {

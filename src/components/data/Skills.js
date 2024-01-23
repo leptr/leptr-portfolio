@@ -29,6 +29,11 @@ const Skills = [
     name: "Python",
     src: "/assets/python.svg",
   },
+  {
+    key: 6,
+    name: "MongoDB",
+    src: "/assets/mongodb.svg",
+  },
 ];
 
 export default Skills;
